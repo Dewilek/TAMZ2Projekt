@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnlineBazar</string>
+
+    <string-array name="items">
+        <item>Auction 1</item>
+        <item>Auction 2</item>
+        <item>Auction 3</item>
+    </string-array>
+</resources>
