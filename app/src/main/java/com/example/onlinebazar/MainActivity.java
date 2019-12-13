@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Button btn1 = (Button) findViewById(R.id.btn1);
+        Button btn1 = (Button) findViewById(R.id.btn3);
         Button btn2 = (Button) findViewById(R.id.btn2);
 
        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ActionArrays.class);
+                Intent startIntent = new Intent(getApplicationContext(),UserLogin.class);
                 //startIntent.putExtra("com.example.onlinebazar.AUKCE", true);
                 startActivityForResult(startIntent,0);
             }
