@@ -20,9 +20,7 @@ public class RegisterUser extends AppCompatActivity {
 
         button_sentForm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {/*
-
-                */
+            public void onClick(View v) {
                 if (false){
                     Toast.makeText(RegisterUser.this, "Error, something went wrong", Toast.LENGTH_SHORT).show();
                 }
