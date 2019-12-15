@@ -49,7 +49,8 @@ public class UserLogin extends AppCompatActivity {
                     {
                         if (logins[i].equals(login) && passwords[i].equals(passwd))
                         {
-                            Intent intent = new Intent(getApplicationContext(), ActionArrays.class);
+                            Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                            intent.putExtra("com.example.onlinebazar.USER_INDEX",i);
                             startActivityForResult(intent, 0);
                             break;
                         }
