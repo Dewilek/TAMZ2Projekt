@@ -55,7 +55,8 @@ public class UserMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (position == 0){
-                    
+                    Intent intent = new Intent(getApplicationContext(),UserArrays.class);
+                    startActivityForResult(intent, 0);
                 }
                 else {
                     btn4.setEnabled(false);

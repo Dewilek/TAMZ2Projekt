@@ -14,9 +14,9 @@ public class UserAdapter extends BaseAdapter {
     String[] lName;
     String[] email;
 
-    public UserAdapter(Context c, String[] items, String[] i, String[] email){
-        this.fName = items;
-        lName = i;
+    public UserAdapter(Context c, String[] fName, String[] lName,  String[] email){
+        this.fName = fName;
+        this.lName = lName;
         this.email = email;
         mInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }

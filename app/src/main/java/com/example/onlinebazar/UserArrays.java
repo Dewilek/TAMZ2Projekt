@@ -16,6 +16,11 @@ public class UserArrays extends AppCompatActivity {
     String[] fName;
     String[] lName;
     String[] email;
+    String[] city;
+    String[] street;
+    String[] postal;
+    String[] phones;
+
 
 
 
@@ -30,6 +35,11 @@ public class UserArrays extends AppCompatActivity {
         fName = res.getStringArray(R.array.fName);
         lName = res.getStringArray(R.array.lName);
         email = res.getStringArray(R.array.emails);
+        city = res.getStringArray(R.array.City);
+        street = res.getStringArray(R.array.Street);
+        postal = res.getStringArray(R.array.Postal);
+        phones = res.getStringArray(R.array.phones);
+
 
 
         UserAdapter userAdapter = new UserAdapter(this,fName,lName,email);

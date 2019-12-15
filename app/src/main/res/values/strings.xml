@@ -88,6 +88,29 @@
         <item>Ingenir</item>
     </string-array>
 
+    <string-array name="City">
+        <item>Ostrava</item>
+        <item>Praha</item>
+        <item>Brno</item>
+        <item>Kladno</item>
+        <item>Opava</item>
+    </string-array>
+
+    <string-array name="Street">
+        <item>Hruskova</item>
+        <item>Jablonova</item>
+        <item>Sadova</item>
+        <item>Nejaka</item>
+        <item>Bakalarska</item>
+    </string-array>
+
+    <string-array name="Postal">
+        <item>72528</item>
+        <item>70050</item>
+        <item>20201</item>
+        <item>12345</item>
+        <item>98765</item>
+    </string-array>
 
 
 </resources>
