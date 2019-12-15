@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">OnlineBazar</string>
+    <string name="phoneNumber">%1$s</string>
 
     <string-array name="items">
         <item>Auction 1</item>
