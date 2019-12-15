@@ -20,10 +20,14 @@ public class SearchAuction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_auction);
 
+        Bundle b = getIntent().getExtras();
+        int position = b.getInt("com.example.onlinebazar.USER_INDEX");
+
         Resources res = getResources();
 
         EditText editText_aName = (EditText) findViewById(R.id.editText_aName);
         Button btn1 = (Button) findViewById(R.id.btn1);
+        Button btn2 = (Button) findViewById(R.id.btn2);
 
         String[] aNames = res.getStringArray(R.array.AuctionName);
 
@@ -56,6 +60,14 @@ public class SearchAuction extends AppCompatActivity {
                     }
 
                 }
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                intent.putExtra("com.example.onlinebazar.USER_INDEX",position);
+                startActivityForResult(intent, 0);
             }
         });
     }

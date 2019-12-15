@@ -36,6 +36,9 @@ public class UserMainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),CreateAuction.class);
+                intent.putExtra("com.example.onlinebazar.USER_INDEX",position);
+                startActivityForResult(intent, 0);
 
             }
         });
@@ -43,7 +46,8 @@ public class UserMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SearchAuction.class);
-                startActivity(intent);
+                intent.putExtra("com.example.onlinebazar.USER_INDEX",position);
+                startActivityForResult(intent, 0);
 
             }
         });

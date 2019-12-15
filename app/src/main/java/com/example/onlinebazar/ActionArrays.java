@@ -24,6 +24,7 @@ public class ActionArrays extends AppCompatActivity {
         setContentView(R.layout.activity_action_arrays);
 
 
+
         Resources res = getResources();
         myListView = (ListView) findViewById(R.id.ListView_actions);
         items = res.getStringArray(R.array.AuctionName);

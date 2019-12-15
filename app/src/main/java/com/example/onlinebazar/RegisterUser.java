@@ -69,6 +69,7 @@ public class RegisterUser extends AppCompatActivity {
                     if (emailchecker[i].equals((editText_email.getText().toString()))) {
                         Toast.makeText(RegisterUser.this, "Email is already used, use different one or login with it!", Toast.LENGTH_SHORT).show();
                         Log.d("HODNOTA Icka", "I je :" + i);
+                        i++;
                         break;
                     }
                     /*else if (phonechecker[j].equals((editText_phoneNumber.getText().toString()))) {
