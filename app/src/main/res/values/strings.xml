@@ -7,5 +7,70 @@
         <item>Auction 3</item>
     </string-array>
 
+    <string-array name="logins">
+        <item>Pepa</item>
+        <item>Dasa</item>
+        <item>Honza</item>
+        <item>Michal</item>
+        <item>Honza22</item>
+    </string-array>
+
+    <string-array name="passwords">
+        <item>P3pa</item>
+        <item>D@sa</item>
+        <item>H0nza</item>
+        <item>M1ch@l</item>
+        <item>H0nza??</item>
+    </string-array>
+
+    <string-array name="emails">
+        <item>Pepa@gmail.com</item>
+        <item>dasa@gmail.com</item>
+        <item>Honza@gmail.com</item>
+        <item>michal@gmail.com</item>
+        <item>honza@seznam.cz</item>
+    </string-array>
+
+    <string-array name="phones">
+        <item>775856963</item>
+        <item>123456789</item>
+        <item>987654321</item>
+        <item>690582105</item>
+        <item>784125963</item>
+    </string-array>
+
+    <string-array name="AuctionName">
+        <item>Prodam Auto NAHNED</item>
+        <item>Pracka je super!</item>
+        <item>Prodam auto OCTAVIA 2.0 TDI, ZNACKA SPECHA</item>
+        <item>Prodam Lednicku!</item>
+        <item>Prodam Popruh na PSA!</item>
+    </string-array>
+
+    <string-array name="AuctionDesc">
+        <item>SKODA FABIA 1.6l,16V, TDI, ROK 2011, BEZ TOTALKY, ZIMNI KOLA V CENE!</item>
+        <item>ZNACKA: BEKO,STARA 5LET, POUZIVANA 4 ROKY, FUNKCNI, PRODEJ KVULI KOUPI NOVE PRACKY</item>
+        <item>OCTAVIA 2.0 TDI, ROK 2016, jednou bourana, cena dohodou po zavolani!</item>
+        <item>lednice v dobrem stavu, FUNKCNI</item>
+        <item>Znacka DOGJEBEST, Barva modra, velikost pro velikeho psa, asi na 30kg!</item>
+    </string-array>
+
+    <string-array name="abPrices">
+        <item>215123</item>
+        <item>3596</item>
+        <item>896124</item>
+        <item>1000</item>
+        <item>596</item>
+    </string-array>
+
+    <string-array name="abPricesG">
+        <item>125896</item>
+        <item>2056</item>
+        <item>NULL</item>
+        <item>230</item>
+        <item>89</item>
+    </string-array>
+
+
 
 </resources>

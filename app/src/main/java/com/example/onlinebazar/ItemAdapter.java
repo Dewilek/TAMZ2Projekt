@@ -11,9 +11,11 @@ public class ItemAdapter extends BaseAdapter {
 
     LayoutInflater mInflater;
     String[] items;
+    String[] desc;
 
-    public ItemAdapter(Context c,String[] i){
-        items = i;
+    public ItemAdapter(Context c, String[] items, String[] i){
+        this.items = items;
+        desc = i;
         mInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -39,8 +41,9 @@ public class ItemAdapter extends BaseAdapter {
         TextView textView_adDesc = (TextView) v.findViewById(R.id.textView_adDesc);
 
         String name = items[position];
+        String desc1 = desc[position];
         textView_adName.setText(name);
-        textView_adDesc.setText("Funguje to jeslti to je kokot!");
+        textView_adDesc.setText(desc1);
         return v;
     }
 }

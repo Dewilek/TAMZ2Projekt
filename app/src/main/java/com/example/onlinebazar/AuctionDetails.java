@@ -3,6 +3,7 @@ package com.example.onlinebazar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -14,12 +15,17 @@ public class AuctionDetails extends AppCompatActivity {
     private int IDs;
     private ConnectURL url = new ConnectURL();
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auction_details);
 
+        Bundle b = getIntent().getExtras();
+        int position = b.getInt("com.example.onlinebazar.ITEM_INDEX");
 
+        Resources res = getResources();
 
         Button btn1 = (Button) findViewById(R.id.btn1);
         Button btn2 = (Button) findViewById(R.id.btn2);
@@ -31,6 +37,22 @@ public class AuctionDetails extends AppCompatActivity {
         TextView textView_abPriceBlue = (TextView) findViewById(R.id.textView_abPriceBlue);
         TextView textView_abPriceGrey = (TextView) findViewById(R.id.textView_abPriceGrey);
         TextView textView_desc = (TextView) findViewById(R.id.textView_desc);
+
+        String[] aNameDB = res.getStringArray(R.array.AuctionName);
+        String[] abPriceDB = res.getStringArray(R.array.abPrices);
+        String[] abPriceGDB = res.getStringArray(R.array.abPricesG);
+
+        textView_aName.setText(aNameDB[position]);
+        textView_abPrice.setText(abPriceDB[position]);
+        textView_abPriceBlue.setText("Biggest bid: ");
+        if (abPriceGDB[position].equals("NULL")) {
+            textView_abPriceGrey.setText("CANNOT BID!");
+        }
+        else {
+            textView_abPriceGrey.setText(abPriceGDB[position]);
+        }
+
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

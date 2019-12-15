@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,6 +15,7 @@ public class ActionArrays extends AppCompatActivity {
 
     ListView myListView;
     String[] items;
+    String[] desc;
 
 
     @Override
@@ -24,10 +26,11 @@ public class ActionArrays extends AppCompatActivity {
 
         Resources res = getResources();
         myListView = (ListView) findViewById(R.id.ListView_actions);
-        items = res.getStringArray(R.array.items);
+        items = res.getStringArray(R.array.AuctionName);
+        desc = res.getStringArray(R.array.AuctionDesc);
 
 
-        ItemAdapter itemAdapter = new ItemAdapter(this,items);
+        ItemAdapter itemAdapter = new ItemAdapter(this,items,desc);
         myListView.setAdapter(itemAdapter);
 
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -36,6 +39,7 @@ public class ActionArrays extends AppCompatActivity {
                 Intent showDetailActivity = new Intent(getApplicationContext(), AuctionDetails.class);
                 showDetailActivity.putExtra("com.example.onlinebazar.ITEM_INDEX",position);
                 startActivity(showDetailActivity);
+                Log.d("KLIKL NA AUKCI","KLIKL JSI NA AUKCI S POSTION" + position);
             }
         });
 
