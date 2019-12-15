@@ -33,7 +33,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.google.android.material:material:1.0.0'
 
-   // compileOnly ('mssql-jdbc-7.4.1.jre8')
+    // compileOnly ('mssql-jdbc-7.4.1.jre8')
     implementation files('libs\\mssql-jdbc-7.4.1.jre8.jar')
 
 }

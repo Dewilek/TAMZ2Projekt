@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -76,7 +77,11 @@ public class AuctionDetails extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent startIntent = new Intent(getApplicationContext(), BidOnItem.class);
+                startIntent.putExtra("com.example.onlinebazar.BID_AMOUNT", abPriceGDB[position]);
+                startIntent.putExtra("com.example.onlinebazar.POSITION", position);
+                startActivityForResult(startIntent, 0);
+                Log.d("BUTTON 1 THINGS","KEY intentu je : " + abPriceGDB[position]);
             }
         });
 
@@ -93,7 +98,6 @@ public class AuctionDetails extends AppCompatActivity {
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:"+phonesDB[position]));
                 startActivity(callIntent);
-
             }
         });
 
@@ -104,7 +108,6 @@ public class AuctionDetails extends AppCompatActivity {
                 ClipData clip = ClipData.newPlainText("Email",aEmailDB[position]);
                 clipboard.setPrimaryClip(clip);
                 Toast.makeText(AuctionDetails.this, "Email " + aEmailDB[position] + " was copied to your clipboard.", Toast.LENGTH_SHORT).show();
-
             }
         });
 
