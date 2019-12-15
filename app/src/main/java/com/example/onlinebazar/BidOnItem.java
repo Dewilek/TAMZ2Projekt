@@ -26,9 +26,7 @@ public class BidOnItem extends AppCompatActivity {
 
         EditText editText_Amount = (EditText) findViewById(R.id.editText_Amount);
         Button btn1 = (Button) findViewById(R.id.btn1);
-
-
-
+        
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

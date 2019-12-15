@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BidOnItem"></activity>
+        <activity android:name=".BuyoutOnItem"></activity>
+        <activity android:name=".BidOnItem" />
         <activity android:name=".RegisterUser_Passwd" />
         <activity android:name=".UserLogin" />
         <activity android:name=".RegisterUser" />

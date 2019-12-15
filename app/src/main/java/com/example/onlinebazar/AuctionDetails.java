@@ -78,7 +78,7 @@ public class AuctionDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), BidOnItem.class);
-                startIntent.putExtra("com.example.onlinebazar.BID_AMOUNT", abPriceGDB[position]);
+                startIntent.putExtra("com.example.onlinebazar.BID_AMOUNT", abPriceDB[position]);
                 startIntent.putExtra("com.example.onlinebazar.POSITION", position);
                 startActivityForResult(startIntent, 0);
                 Log.d("BUTTON 1 THINGS","KEY intentu je : " + abPriceGDB[position]);
@@ -88,6 +88,11 @@ public class AuctionDetails extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), BuyoutOnItem.class);
+                startIntent.putExtra("com.example.onlinebazar.BID_AMOUNT", abPriceGDB[position]);
+                startIntent.putExtra("com.example.onlinebazar.POSITION", position);
+                startActivityForResult(startIntent, 0);
+                Log.d("BUTTON 1 THINGS","KEY intentu je : " + abPriceGDB[position]);
 
             }
         });
