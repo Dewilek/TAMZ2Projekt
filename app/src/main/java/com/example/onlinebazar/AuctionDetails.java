@@ -11,10 +11,15 @@ import android.widget.TextView;
 
 public class AuctionDetails extends AppCompatActivity {
 
+    private int IDs;
+    private ConnectURL url = new ConnectURL();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auction_details);
+
+
 
         Button btn1 = (Button) findViewById(R.id.btn1);
         Button btn2 = (Button) findViewById(R.id.btn2);
@@ -57,6 +62,9 @@ public class AuctionDetails extends AppCompatActivity {
 
             }
         });
+
+        //url.TryConenction();
+        //textView_aName.setText(url.aName[1]);
 
     }
 }
