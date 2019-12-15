@@ -34,13 +34,13 @@ public class CreateAuction extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //TODO 3
-                //
+                // THIS NEEDS TO BE CHANGED IN ORDER IN THE FUTURE BECAUSE NOW IT IS NOT WORKING BCS OF STRINGS.XML
                 int i = 0;
                 if (editText_abPrice.getText().toString().equals("")) {
                     Toast.makeText(CreateAuction.this, "Auction Buyout price can not be empty.", Toast.LENGTH_SHORT).show();
                 } else if (editText_BidPrice.getText().toString().equals("")) {
                     //TODO 4
-                    //FOR FUTURE USE THIS SHOULD BE SET TO NULL SINCE YOU CAN HAVE ACTIONS CREATED WITHOUT BID = NOTBIDABLE AUCTIONS!
+                    // FOR FUTURE USE THIS SHOULD BE SET TO NULL SINCE YOU CAN HAVE ACTIONS CREATED WITHOUT BID = NOTBIDABLE AUCTIONS!
                     editText_BidPrice.setText("NULL");
                 } else if (editText_desc.getText().toString().equals("")) {
                     Toast.makeText(CreateAuction.this, "Description can not be empty.", Toast.LENGTH_SHORT).show();}

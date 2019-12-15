@@ -72,5 +72,22 @@
         <item>89</item>
     </string-array>
 
+    <string-array name="fName">
+        <item>Pepa</item>
+        <item>Dasa</item>
+        <item>Honza</item>
+        <item>Michal</item>
+        <item>Jan</item>
+    </string-array>
+
+    <string-array name="lName">
+        <item>Admin</item>
+        <item>Krasna</item>
+        <item>Rychly</item>
+        <item>Bakalar</item>
+        <item>Ingenir</item>
+    </string-array>
+
+
 
 </resources>

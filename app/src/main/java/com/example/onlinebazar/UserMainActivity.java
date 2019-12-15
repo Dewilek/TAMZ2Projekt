@@ -54,6 +54,12 @@ public class UserMainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (position == 0){
+                    
+                }
+                else {
+                    btn4.setEnabled(false);
+                }
 
             }
         });

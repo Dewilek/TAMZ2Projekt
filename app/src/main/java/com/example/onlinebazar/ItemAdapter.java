@@ -37,8 +37,8 @@ public class ItemAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = mInflater.inflate(R.layout.auctions_list_details,null);
-        TextView textView_adName = (TextView) v.findViewById(R.id.textView_adName);
-        TextView textView_adDesc = (TextView) v.findViewById(R.id.textView_adDesc);
+        TextView textView_adName = (TextView) v.findViewById(R.id.textView_auName);
+        TextView textView_adDesc = (TextView) v.findViewById(R.id.textView_auDesc);
 
         String name = items[position];
         String desc1 = desc[position];
